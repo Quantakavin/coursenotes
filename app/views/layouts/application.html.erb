@@ -13,3 +13,27 @@
     <%= yield %>
   </body>
 </html>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<header class="navbar navbar-fixed-top navbar-inverse navbar-default">
+  <div class="container">
+    <nav>
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+        <%= link_to "Enrole", root_path, class: "link" %>
+      </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item"><%= link_to "Sign Up", '#', :method => :get, class: "nav-link"%></li>
+        <li class="nav-item"><%= link_to "Log in", '#', :method => :get, class: "nav-link" %></li>
+        <li class="nav-item"><%= link_to "For Companies", '#',:method => :get, class: "nav-link" %></li>
+      </ul>
+      </div>
+    </nav>
+  </div>
+</header>
